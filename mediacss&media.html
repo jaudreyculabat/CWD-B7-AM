@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Usage for Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- style.css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Media css</title>
+</head>
+<body class="pink lighten-4">
+
+
+<!-- breadcrumbs -->
+  <nav>
+    <div class="nav-wrapper">
+        <div class="col s12 center">
+            <a href="index.html" target="_blank" class="breadcrumb">Typhography</a>
+            <a href="card-panel.html" target="_blank" class="breadcrumb">Card-panel</a>
+            <a href="buttons.html" class="breadcrumb">Buttons</a>
+            <a href="collections.html" target="_blank" class="breadcrumb">Collections</a>
+            <a href="floatingActionFabtoTool.html" target="_blank" class="breadcrumb">FloatingActionFabtoTool</a>
+            <a href="#" target="_blank" class="breadcrumb">mediacss&media</a>
+            <a href="materialbox.html" target="_blank" class="breadcrumb">materialbox</a>
+            <a href="promotionTable.html" target="_blank" class="breadcrumb">promotionTable</a>
+            <a href="ResponsiveLayouts.html" target="_blank" class="breadcrumb">ResponsiveLayouts</a>
+        </div>
+    </div>
+  </nav>  
+
+  <section class="section">
+    <div class="container">
+      <h1 class="center">Nintendo Switch</h1>
+      <br>
+
+    <!-- image -->
+      <h4 class="pink-text text-daken-5">Image</h4>
+      <div class="row">
+        <div class="col s10">
+          <img src="image/games1.jpg" alt="" class="responsive-img">
+          <img src="image/games2.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+
+    <!-- Image and responsive to circle -->
+      <h4 class="pink-text text-daken-5">Image responsive to circle</h4>
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel blue lighten-3 z-depth-5 ">
+            <div class="row valign-wrapper">
+              <div class="col s8">
+                <img src="image/games.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  The Nintendo Switch is certainly worth buying in 2022.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Videos -->
+      <h4 class="pink-text text-daken-5">Video</h4>
+      <div class="row">
+        <div class="col s10">
+          <div class="video-container ">
+            <iframe width="1029" height="525" src="https://www.youtube.com/embed/WniaKJzCNRI" title="Welcome to Nintendo Switch!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> 
+    
+      <!-- video download/attached -->
+      <h4 class="pink-text text-daken-5">Video Uploaded</h4>
+      <div class="row">
+        <div class="col s10">
+          <div class="video-container2">
+            <video class="responsive-video" controls>
+              <source src="Vid.mp4" type="video/mp4" >
+            </video>
+          </div>
+        </div>
+      </div> 
+    
+      <!-- material box -->
+      <h4 class="pink-text text-daken-5">Material Boxed</h4>
+      <div class="row">
+        <div class="s10">
+          <img class="materialboxed" height="350" width="350" src="image/games3.jpg">
+        </div>
+      </div>
+        
+      <!-- Slider -->
+      <h4 class="pink-text text-daken-5">Slider</h4>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="image/games1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3 >The Nintendo Switch family is home to exclusive games</h3>
+              <h5 class="light grey-text text-lighten-3">The Legend of Zelda™, Mario Kart™, and many more.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="image/games1.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Three modes in one</h3>
+              <h5 class="light grey-text text-lighten-3">TV mode, Tabletop mode, Handheld mode.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="image/games1.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>This is JoyCon™</h3>
+              <h5 class="light grey-text text-lighten-3">Give you total gameplay flexibility.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="image/games1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Nintendo Switch is designed to fit your life</h3>
+              <h5 class="light grey-text text-lighten-3">transforming from home console to portable system in a snap.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+<br><br>
+
+    </div>
+  </section>
+    
+
+  
+
+
+
+<!-- jQuery Code must be above JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+  
+</script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $('.fixed-action-btn').floatingActionButton({
+      toolbarEnabled: true
+       });
+  });
+</script>    
+
+<script>
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+
+</script>
+
+</body>
+</html>

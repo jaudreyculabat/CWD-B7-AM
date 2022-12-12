@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Usage for Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- style.css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title Bar -->
+    <title>Fab to toolbar</title>
+</head>
+
+
+<body>
+
+<!-- breadcrumbs -->
+  <nav>
+    <div class="nav-wrapper">
+        <div class="col s12 center">
+            <a href="index.html" target="_blank" class="breadcrumb">Typhography</a>
+            <a href="card-panel.html" target="_blank" class="breadcrumb">Card-panel</a>
+            <a href="buttons.html" class="breadcrumb">Buttons</a>
+            <a href="collections.html" target="_blank" class="breadcrumb">Collections</a>
+            <a href="#" target="_blank" class="breadcrumb">FloatingActionFabtoTool</a>
+            <a href="mediacss&media.html" target="_blank" class="breadcrumb">mediacss&media</a>
+            <a href="materialbox.html" target="_blank" class="breadcrumb">materialbox</a>
+            <a href="promotionTable.html" target="_blank" class="breadcrumb">promotionTable</a>
+            <a href="ResponsiveLayouts.html" target="_blank" class="breadcrumb">ResponsiveLayouts</a>
+        </div>
+    </div>
+  </nav>    
+  
+    <div class="fixed-action-btn toolbar">
+        <a href="#!" class="btn-floating btn-large red">
+          <i class="material-icons">assistant</i>
+        </a>
+        <ul>
+          <li>
+            <a href="" class="btn orange">
+              <i class="material-icons">add</i></a>
+          </li>
+          <li>
+            <a href="" class="btn yellow">
+              <i class="material-icons">add</i></a>
+          </li>
+          <li>
+            <a href="" class="btn green">
+              <i class="material-icons">add</i></a>
+          </li>
+          <li>
+            <a href="" class="btn blue">
+              <i class="material-icons">add</i></a>
+          </li>
+          <li>
+            <a href="" class="btn indigo">
+              <i class="material-icons">add</i></a>
+          </li>
+          <li>
+            <a href="" class="btn violet">
+              <i class="material-icons">add</i></a>
+          </li>
+        </ul>
+      </div>
+    
+
+
+<!-- jQuery Code must be above JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton({
+        toolbarEnabled: true
+         });
+    });
+    </script>
+</body>
+</html>

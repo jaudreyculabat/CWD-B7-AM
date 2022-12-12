@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Usage for Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>MaterialBox</title>
+</head>
+
+<body class="grey darken-2">
+    
+<!-- breadcrumbs -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12 center">
+                <a href="index.html" target="_blank" class="breadcrumb">Typhography</a>
+                <a href="card-panel.html" target="_blank" class="breadcrumb">Card-panel</a>
+                <a href="buttons.html" class="breadcrumb">Buttons</a>
+                <a href="collections.html" target="_blank" class="breadcrumb">Collections</a>
+                <a href="floatingActionFabtoTool.html" target="_blank" class="breadcrumb">FloatingActionFabtoTool</a>
+                <a href="mediacss&media.html" target="_blank" class="breadcrumb">mediacss&media</a>
+                <a href="#" target="_blank" class="breadcrumb">materialbox</a>
+                <a href="promotionTable.html" target="_blank" class="breadcrumb">promotionTable</a>
+                <a href="ResponsiveLayouts.html" target="_blank" class="breadcrumb">ResponsiveLayouts</a>
+            </div>
+        </div>
+    </nav>  
+
+    <div class="container">
+        <h4 class="card-panel orange  center"><b>Rottweiler</b></h4>
+        <div class="row">          
+            <div class="col s6 m4 l3">
+                <img src="image/rot1.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col l3 hide-on-med-and-down">
+                <img src="image/rot2.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s6 m4 l3">
+                <img src="image/rot3.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col m4 l3 hide-on-small-only">
+                <img src="image/rot4.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+        </div> <br><br>
+    
+
+       <div class="row">
+            <div class="col s12">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="image/americanrot1.png" alt="" style="height: auto;">
+                            <div class="caption center-align">
+                                <h2 class="orange-text text-darken-4">American Rottweiler</h2>
+                                <h4>The American Rottweiler is a medium-sized dog with a strong, muscular build</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="image/Germanrot.jpg" alt="" style="height: auto;">
+                            <div class="caption center-align">
+                                <h2 class="orange-text text-darken-4">German Rottweiler</h2>
+                                <h4>German Rottweilers appear more impressive than most American Rottweilers with thick bones, broader bodies, and blocky heads</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="image/romanrot.png" alt="" style="height: auto;">
+                            <div class="caption center-align">
+                                <h2 class="orange-text text-darken-4">Roman Rottweiler</h2>
+                                <h4>The Roman Rottweiler is the giant breed of the Rottweiler</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div> 
+    </div>
+
+
+
+
+
+<!-- jQuery Code must be above JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+
+<script>
+// materialbox init
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+    });
+// slider init
+    $(document).ready(function(){
+    $('.slider').slider({
+        indicators: false,
+        height: 500
+        });
+    });
+</script>
+
+</body>
+</html>
